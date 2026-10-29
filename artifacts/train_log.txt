@@ -1,0 +1,37 @@
+logistic_regression {"threshold": 0.35, "cv_cost": 51110, "test_cost": 13510, "fp": 751, "fn": 12, "tp": 363, "tn": 14874, "recall": 0.968, "precision": 0.3259, "f1": 0.4876, "roc_auc": 0.9917, "cost_reduction_vs_no_model_pct": 92.8, "cost_reduction_vs_inspect_all_pct": 91.4}
+decision_tree {"threshold": 0.39, "cv_cost": 71510, "test_cost": 16620, "fp": 462, "fn": 24, "tp": 351, "tn": 15163, "recall": 0.936, "precision": 0.4317, "f1": 0.5909, "roc_auc": 0.9409, "cost_reduction_vs_no_model_pct": 91.1, "cost_reduction_vs_inspect_all_pct": 89.4}
+random_forest {"threshold": 0.059, "cv_cost": 40820, "test_cost": 9450, "fp": 445, "fn": 10, "tp": 365, "tn": 15180, "recall": 0.9733, "precision": 0.4506, "f1": 0.616, "roc_auc": 0.9935, "cost_reduction_vs_no_model_pct": 95.0, "cost_reduction_vs_inspect_all_pct": 94.0}
+BEST: random_forest {
+  "train_rows": 60000,
+  "test_rows": 16000,
+  "raw_sensor_features": 170,
+  "features_used": 164,
+  "sensors_dropped_high_missing": [
+    "ab_000",
+    "bn_000",
+    "bo_000",
+    "bp_000",
+    "bq_000",
+    "br_000",
+    "cr_000"
+  ],
+  "train_failures": 1000,
+  "test_failures": 375,
+  "pct_cells_missing_train": 8.3,
+  "baseline_no_model_cost": 187500,
+  "baseline_inspect_all_cost": 156250,
+  "best_model": "random_forest",
+  "best_model_default_threshold_cost": 60700,
+  "top_features": {
+    "aa_000": 0.0775,
+    "ck_000": 0.075,
+    "bt_000": 0.0515,
+    "ci_000": 0.0487,
+    "ap_000": 0.0448,
+    "bj_000": 0.043,
+    "bb_000": 0.037,
+    "bv_000": 0.0317,
+    "aq_000": 0.0303,
+    "cq_000": 0.029
+  }
+}

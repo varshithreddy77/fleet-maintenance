@@ -1,0 +1,5 @@
+data/aps_failure_training_set.csv
+__pycache__/
+artifacts/decision_tree.joblib
+artifacts/logistic_regression.joblib
+artifacts/random_forest.joblib
